@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <?php
 include 'connectDB.php';
+include 'menu.php';
 /*$servername = "localhost";
 $username 	= "root";
 $password 	= "";
