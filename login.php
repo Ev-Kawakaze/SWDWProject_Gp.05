@@ -27,21 +27,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //https://www.w3ccoo.com/php/php_su
 <!DOCTYPE html>
 <html>
 <body>
-    <h2>Logon Form</h2>
-
-    <?php if ($msg != "") { ?>
-        <p>
-            <?php echo $msg; ?>
-        </p>
-    <?php } ?>
-
-
-    <form action="" method="POST">
-        <label for="usr">username:</label><br>
-        <input type="text" id="usr" name="usr" placeholder="Username"><br>
-        <label for="pwd">password:</label><br>
-        <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
-        <input type="submit" value="Submit">
-    </form> 
+    <div id="div1">
+        <h1>Login</h1>
+    </div>
+    <div id="div3">
+        <h2>Login Member</h2>
+        <?php if ($msg != "") { ?>
+            <p>
+                <?php echo $msg; ?>
+            </p>
+        <?php } ?>
+        <form action="" method="POST">
+            <label for="usr">username:</label><br>
+            <input type="text" id="usr" name="usr" placeholder="Username"><br>
+            <label for="pwd">password:</label><br>
+            <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div> 
 </body>
 </html>
