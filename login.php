@@ -30,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['register'])) {
-    $rUser = trim($_POST["r_usr"]);
-    $rPhone = trim($_POST["r_phone"]);
+    $rUser = $_POST["r_usr"];
+    $rPhone = $_POST["r_phone"];
     $rPwd = $_POST["r_pwd"];
     $rPwd2 = $_POST["r_pwd2"];
 
